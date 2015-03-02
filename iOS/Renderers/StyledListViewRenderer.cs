@@ -5,7 +5,6 @@ using XamarinSA.Locator.Views;
 
 
 [assembly: Xamarin.Forms.ExportRenderer(typeof(StyledListView), typeof(StyledListViewRenderer))]
-
 namespace XamarinSA.Locator.iOS.Renderers
 {
 	public class StyledListViewRenderer : ListViewRenderer

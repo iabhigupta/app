@@ -22,18 +22,16 @@
 			<StackLayout Orientation="Horizontal" VerticalOptions="Fill">
 				<Label Text="Twitter:" TextColor="White" HorizontalOptions="EndAndExpand"/>
 				<Button Text="{Binding Xsa.Twitter}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
-					HeightRequest="20" Command="{Binding OpenCommand}" CommandParameter="twitter"
-					HorizontalOptions="StartAndExpand"/>
+					BackgroundColor="Transparent" Command="{Binding OpenCommand}" CommandParameter="twitter"
+					HorizontalOptions="StartAndExpand" FontSize="20"/>
 			</StackLayout>
 					
 			<StackLayout Orientation="Horizontal" VerticalOptions="Fill">
 				<Label Text="Blog:" TextColor="White" HorizontalOptions="EndAndExpand"/>
 				<Button Text="{Binding Xsa.Blog}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
-					HeightRequest="20" Command="{Binding OpenCommand}" CommandParameter="blog"
-					HorizontalOptions="StartAndExpand"/>
+					BackgroundColor="Transparent" Command="{Binding OpenCommand}" FontSize="20" CommandParameter="blog"
+					HorizontalOptions="StartAndExpand" VerticalOptions="Fill"/>
 			</StackLayout>
-			<maps:Map HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-			</maps:Map>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

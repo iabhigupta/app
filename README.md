@@ -12,7 +12,7 @@ The person in charge of this project is Tyler Vanderhoef (tvand7093)
 ### Details
 1. UI is built using the MVVM pattern with XAML and view models (Project name: XamarinSA.Locator)
 2. The base classes for most view models can be found in the project XamarinSA.Base
-3. Platform specific code such as renderers can be seen in project XamarinSA.<platform>, where plaform is the one you desire.
+3. Platform specific code such as renderers can be seen in <platform> project, where plaform is the one you desire.
 
 ### Development
 1. For the most stable version of the application, use the 'master' branch.

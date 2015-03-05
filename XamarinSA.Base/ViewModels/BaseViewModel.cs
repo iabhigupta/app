@@ -12,7 +12,16 @@ namespace Xamarin.Base.ViewModels
 		}
 
 		public INavigation Navigation {
-			get { return Application.Current.MainPage.Navigation; }
+			get { 
+				var mainPage = Application.Current.MainPage;
+				if (mainPage is NavigationPage) {
+					return (INavigation)mainPage;
+				}
+				if (mainPage is TabbedPage) {
+					return ((TabbedPage)mainPage).Children [0].Navigation;
+				}
+				return Application.Current.MainPage.Navigation;
+			}
 		}
 			
 		#region Property Changed Implementation

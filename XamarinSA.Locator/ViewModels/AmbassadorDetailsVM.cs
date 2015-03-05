@@ -30,7 +30,7 @@ namespace XamarinSA.Locator.ViewModels
 					return;
 				}
 				if(openFor.CompareTo(Twitter) == 0){
-					Device.OpenUri(new Uri(string.Format("twitter://{0}", Xsa.Twitter)));
+					Device.OpenUri(new Uri(string.Format("twitter://user?screen_name={0}", Xsa.TwitterUsername)));
 					return;
 				}
 			});

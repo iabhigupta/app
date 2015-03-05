@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
-using XamarinSA.Locator.Views;
-using XamarinSA.Locator.ViewModels;
+using XamarinSA.Locator.Views.Pages;
 
 namespace XamarinSA.Locator
 {
@@ -9,7 +8,7 @@ namespace XamarinSA.Locator
 	{
 		public App ()
 		{
-			MainPage = new StyledNavigationPage (new AmbassadorList ());
+			MainPage = new StyledTabbedPage ();
 		}
 
 		protected override void OnResume ()

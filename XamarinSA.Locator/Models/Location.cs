@@ -12,8 +12,13 @@ namespace XamarinSA.Locator.Models
 		public string LocationString {
 			get {
 				if (String.IsNullOrEmpty (location)) {
-					location = string.Format ("Location: {0}, {1}, {2}",
-						City, StateRegion, Country);
+					if (!String.IsNullOrEmpty (StateRegion)) {
+						location = string.Format ("Location: {0}, {1}, {2}",
+							City, StateRegion, Country);
+					} else {
+						location = string.Format ("Location: {0}, {1}",
+							City, Country);
+					}
 				}
 				return location;
 			}

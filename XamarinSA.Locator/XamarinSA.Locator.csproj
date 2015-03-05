@@ -33,23 +33,29 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AmbassadorListVM.cs" />
-    <Compile Include="Views\AmbassadorList.xaml.cs">
-      <DependentUpon>AmbassadorList.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\Ambassador.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Views\Cells\AmbassadorCell.cs" />
-    <Compile Include="Views\StyledListView.xaml.cs">
+    <Compile Include="ViewModels\AmbassadorDetailsVM.cs" />
+    <Compile Include="Misc\ColorStyles.cs" />
+    <Compile Include="Views\Controls\TappableLabel.cs" />
+    <Compile Include="Views\Controls\StyledListView.xaml.cs">
       <DependentUpon>StyledListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AmbassadorDetails.xaml.cs">
+    <Compile Include="Views\Pages\AmbassadorDetails.xaml.cs">
       <DependentUpon>AmbassadorDetails.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\AmbassadorDetailsVM.cs" />
-    <Compile Include="Views\StyledNavigationPage.cs" />
-    <Compile Include="Misc\ColorStyles.cs" />
-    <Compile Include="Views\TappableLabel.cs" />
+    <Compile Include="Views\Pages\AmbassadorList.xaml.cs">
+      <DependentUpon>AmbassadorList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\StyledNavigationPage.cs" />
+    <Compile Include="Views\Pages\StyledTabbedPage.xaml.cs">
+      <DependentUpon>StyledTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\MapPage.cs" />
+    <Compile Include="Data\AmbassadorService.cs" />
+    <Compile Include="Interfaces\ILocationProvider.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.4.6332\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.4.6332\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -75,14 +81,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Views\AmbassadorList.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Data\Ambassadors.json" />
-    <EmbeddedResource Include="Views\StyledListView.xaml">
+    <EmbeddedResource Include="Views\Controls\StyledListView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AmbassadorDetails.xaml">
+    <EmbeddedResource Include="Views\Pages\AmbassadorDetails.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pages\AmbassadorList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pages\StyledTabbedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -99,4 +108,8 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
   </Target>
+  <ItemGroup>
+    <Folder Include="Views\Controls\" />
+    <Folder Include="Views\Pages\" />
+  </ItemGroup>
 </Project>

@@ -5,18 +5,27 @@ namespace XamarinSA.Locator.Models
 {
 	public class Ambassador
 	{
-
 		public string Name {get;set;}
-		public string Twitter {get; set;}
+		public string TwitterUsername {get; set;}
 		public string Blog { get;set; }
-		public string Facebook { get; set; }
+		public string Bio { get; set; }
 		public string Email { get; set; }
+
+		private string twitter;
+		public string TwitterHandle {
+			get {
+				if (string.IsNullOrEmpty (twitter)) {
+					twitter = string.Format ("@{0}", TwitterUsername);
+				}
+				return twitter;
+			}
+		}
 
 		private string gravitar;
 		public string Gravitar {
 			get { 
 				if (string.IsNullOrEmpty (gravitar)) {
-					gravitar = GenerateGravitarLink (Email);
+					gravitar = GenerateGravitarLink (Email, 75);
 				}
 				return gravitar;
 			}

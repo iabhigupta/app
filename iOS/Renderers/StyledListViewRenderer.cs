@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms.Platform.iOS;
 using XamarinSA.Locator.iOS.Renderers;
-using XamarinSA.Locator.Views;
+using XamarinSA.Locator.Views.Controls;
 
 
 [assembly: Xamarin.Forms.ExportRenderer(typeof(StyledListView), typeof(StyledListViewRenderer))]
@@ -12,7 +12,6 @@ namespace XamarinSA.Locator.iOS.Renderers
 		protected override void OnElementPropertyChanged (object sender,
 			System.ComponentModel.PropertyChangedEventArgs e)
 		{
-
 			base.OnElementPropertyChanged (sender, e);
 		}
 

@@ -49,6 +49,7 @@ namespace XamarinSA.Locator.Views
 		{
 			//create default label tap handler
 			labelTapped = new TapGestureRecognizer ();
+			this.GestureRecognizers.Add (labelTapped);
 		}
 	}
 }

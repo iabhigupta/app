@@ -10,7 +10,7 @@
 	BackgroundColor="{x:Static consts:ColorStyles.XamarinDark}">
 
 	<ContentPage.BindingContext>
-		<!-- Do not set in XAML (use ctor) -->
+		<!-- Do not set in XAML (use ctor from push) -->
 	</ContentPage.BindingContext>
 	<ContentPage.Content>
 		<StackLayout Padding="10">
@@ -30,7 +30,7 @@
 					
 			<StackLayout Orientation="Horizontal" VerticalOptions="Fill">
 				<Label Text="Blog:" TextColor="White" HorizontalOptions="EndAndExpand"/>
-				<TappableLabel Text="{Binding Xsa.Blog}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
+				<ctrls:TappableLabel Text="{Binding Xsa.Blog}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
 					Command="{Binding OpenCommand}" CommandParameter="blog"
 					HorizontalOptions="StartAndExpand" HeightRequest="20" VerticalOptions="Fill"/>
 			</StackLayout>

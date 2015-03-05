@@ -3,6 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:vms="clr-namespace:XamarinSA.Locator.ViewModels;assembly=XamarinSA.Locator"
 	xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+	xmlns:ctrls="clr-namespace:XamarinSA.Locator.Views;assembly=XamarinSA.Locator"
 	Title="Ambassador Info"
 	xmlns:consts="clr-namespace:XamarinSA.Locator.Misc;assembly=XamarinSA.Locator"
 	x:Class="XamarinSA.Locator.Views.AmbassadorDetails"
@@ -21,15 +22,16 @@
 
 			<StackLayout Orientation="Horizontal" VerticalOptions="Fill">
 				<Label Text="Twitter:" TextColor="White" HorizontalOptions="EndAndExpand"/>
-				<Button Text="{Binding Xsa.Twitter}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
-					BackgroundColor="Transparent" HeightRequest="20" Command="{Binding OpenCommand}"
+				<ctrls:TappableLabel Text="{Binding Xsa.Twitter}" 
+					TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
+					HeightRequest="20" Command="{Binding OpenCommand}"
 					CommandParameter="twitter" HorizontalOptions="StartAndExpand"/>
 			</StackLayout>
 					
 			<StackLayout Orientation="Horizontal" VerticalOptions="Fill">
 				<Label Text="Blog:" TextColor="White" HorizontalOptions="EndAndExpand"/>
-				<Button Text="{Binding Xsa.Blog}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
-					BackgroundColor="Transparent" Command="{Binding OpenCommand}" CommandParameter="blog"
+				<TappableLabel Text="{Binding Xsa.Blog}" TextColor="{x:Static consts:ColorStyles.XamarinLightBlue}"
+					Command="{Binding OpenCommand}" CommandParameter="blog"
 					HorizontalOptions="StartAndExpand" HeightRequest="20" VerticalOptions="Fill"/>
 			</StackLayout>
 			<maps:Map HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>

@@ -3,14 +3,14 @@
 A Xamarin.Forms application for finding your local Xamarin Student Ambassador.
 
 ### iOS Screen Shots
-[Home Tab](https://github.com/Xamarin-Student-Ambassadors/app/blob/dev/iOS/screenshots/iOS%20Simulator%20Screen%20Shot%20Mar%205%2C%202015%2C%2001.14.27.png "Screen Shot 1")
+[Home Screen](https://github.com/Xamarin-Student-Ambassadors/app/blob/dev/iOS/screenshots/iOS%20Simulator%20Screen%20Shot%20Mar%205%2C%202015%2C%2001.14.27.png "Screen Shot 1")
 
-[Details Tab](https://github.com/Xamarin-Student-Ambassadors/app/blob/dev/iOS/screenshots/iOS%20Simulator%20Screen%20Shot%20Mar%205%2C%202015%2C%2001.15.06.png "Screen Shot 2")
+[Details Screen](https://github.com/Xamarin-Student-Ambassadors/app/blob/dev/iOS/screenshots/iOS%20Simulator%20Screen%20Shot%20Mar%205%2C%202015%2C%2001.15.06.png "Screen Shot 2")
 
-[Map Tab](https://github.com/Xamarin-Student-Ambassadors/app/blob/dev/iOS/screenshots/iOS%20Simulator%20Screen%20Shot%20Mar%205%2C%202015%2C%2001.14.43.png "Screen Shot 3")
+[Map Screen](https://github.com/Xamarin-Student-Ambassadors/app/blob/dev/iOS/screenshots/iOS%20Simulator%20Screen%20Shot%20Mar%205%2C%202015%2C%2001.14.43.png "Screen Shot 3")
 
-### Team Lead
-The person in charge of this project is Tyler Vanderhoef (tvand7093)
+### Team Leads
+The person in charge of this project is Tyler Vanderhoef (tvand7093) and Gincarlo Lelli.
 
 ### Features
 1. Supports iOS and Android platforms

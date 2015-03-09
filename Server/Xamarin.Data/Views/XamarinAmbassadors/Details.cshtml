@@ -1,0 +1,130 @@
+﻿@model XamarinSA.Locator.Data.Models.Ambassador
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>XamarinAmbassador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TwitterHandle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TwitterHandle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FacebookName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FacebookName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkedInName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkedInName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blog)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blog)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCertified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsCertified)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoUri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhotoUri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventPage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventPage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Biography)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Biography)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GpsCoordinates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GpsCoordinates)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

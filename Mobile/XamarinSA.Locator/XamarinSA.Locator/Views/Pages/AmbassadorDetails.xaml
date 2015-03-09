@@ -37,7 +37,7 @@
 				</StackLayout>
 
 				<Label Text="Bio" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
-				<Label Text="{Binding Xsa.Bio}" TextColor="White"
+				<Label Text="{Binding Xsa.Biography}" TextColor="White"
 					HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"/>
 			</StackLayout>
 		</ScrollView>

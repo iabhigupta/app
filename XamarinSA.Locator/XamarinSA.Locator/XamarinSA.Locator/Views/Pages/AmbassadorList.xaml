@@ -14,7 +14,7 @@
 		 SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
 			<ListView.ItemTemplate>
 				<DataTemplate>
-					<cells:AmbassadorCell ImageSource="{Binding Gravitar}" Text="{Binding Name}"
+					<cells:AmbassadorCell ImageSource="{Binding Gravitar}" Text="{Binding FullName}"
 						Detail="{Binding Location.LocationString}" TextColor="White"
 						DetailColor="White"/>
 				</DataTemplate>

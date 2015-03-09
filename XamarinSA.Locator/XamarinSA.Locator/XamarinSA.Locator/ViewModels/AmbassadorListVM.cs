@@ -25,6 +25,7 @@ namespace XamarinSA.Locator.ViewModels
 			AmbassadorService.FetchAmbassadorsAsync ((ambassadors) => {
                 if(ambassadors != null)
                     Items.Add(ambassadors);
+				MessagingCenter.Send<ICollection<Ambassador>>(ambassadors, "AmbassadorsRecieved");
             });
 
 			SelectionChangedCommand = new Command (async () => {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 using xBrainLab.Security.Cryptography;
+using System.Text;
 
 namespace XamarinSA.Locator.Data.Models
 {
@@ -27,6 +28,39 @@ namespace XamarinSA.Locator.Data.Models
 			}
 		}
 
+		private string fullName;
+		public string FullName {
+			get {
+				if (String.IsNullOrEmpty (fullName)) {
+					var sb = new StringBuilder ();
+					sb.Append (FirstName);
+					//generate fullname
+					if (!String.IsNullOrEmpty (FirstName))
+						sb.Append (" ");
+
+					sb.Append (MiddleName);
+					if (!String.IsNullOrEmpty (MiddleName) && !String.IsNullOrEmpty(FirstName)) {
+						sb.Append (" ");
+					}
+
+					sb.Append (LastName);
+					fullName = sb.ToString ();
+				}
+				return fullName;
+			}
+		}
+
+		private Location location;
+		public Location Location {
+			get {
+				if(location == null){
+					location = new Location (this);
+				}
+				return location;
+			}
+
+		}
+			
         [IgnoreDataMember]
 #if ASPNET
         [ScaffoldColumn(false)]
@@ -50,6 +84,18 @@ namespace XamarinSA.Locator.Data.Models
         [Display(Name = "Last Name"), Required]
 #endif
         public String LastName { get; set; }
+
+		[DataMember]
+#if ASPNET
+		[Display(Name = "City"), Required]
+#endif
+		public String City { get; set; }
+
+		[DataMember]
+#if ASPNET
+		[Display(Name = "State or Region")]
+#endif
+		public String StateRegion { get; set; }
 
         [DataMember]
 #if ASPNET
@@ -132,7 +178,7 @@ namespace XamarinSA.Locator.Data.Models
 		public Ambassador ()
 		{
 		}
-
+			
 		private static string GenerateGravitarLink(string email, int size = -1){
 			email = email.Trim ().ToLower ();
 			var hash = MD5.GetHashString (email);

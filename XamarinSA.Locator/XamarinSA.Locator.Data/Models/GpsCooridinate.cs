@@ -12,15 +12,15 @@ namespace XamarinSA.Locator.Data.Models
 
         public double Latitude { get; set; }
 
-        internal static GpsCooridinate Parse(string p)
+		public static GpsCooridinate Parse(string p)
         {
             //TODO: determine how this format is being stored in DB.
-            //for now, assume pattern: <longitude>;<Latitude>
+            //for now, assume pattern: <latitude>;<longitude>
             var split = p.Split(',');
             return new GpsCooridinate()
             {
-                Longitude = Double.Parse(split[0]),
-                Latitude = Double.Parse(split[1])
+				Latitude = Double.Parse(split[0]),
+                Longitude = Double.Parse(split[1])
             };
         }
     }

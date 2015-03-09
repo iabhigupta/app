@@ -15,7 +15,8 @@ namespace XamarinSA.Locator.iOS.Interop
 		{
 			var locator = CrossGeolocator.Current;
 			locator.DesiredAccuracy = 50;
-			var pin = await locator.GetPositionAsync (timeout: 10000);
+			var pin = await locator.GetPositionAsync (timeout: 100000);
+			//45.648364, -122.563776
             return new GpsCooridinate()
             {
 				Longitude = pin.Longitude,

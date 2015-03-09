@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.IO;
-using Newtonsoft.Json;
 using System.Threading.Tasks;
 using XamarinSA.Locator.Data.Extensions;
 using System.Net;
 using System.Diagnostics;
 using XamarinSA.Locator.Data.Models;
 using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace XamarinSA.Locator.Data
 {
 	public static class AmbassadorService
 	{
 #if DEBUG
-        private const String HOST_NAME = "https://10.0.1.9:44301/api";
+		private const String HOST_NAME = "http://10.0.1.9:4267/api/";
         private const String ALL_AMBASSADORS = "values";
         private const String DETA_AMBASSADOR = "values/{0}";
 #else
@@ -36,7 +36,7 @@ namespace XamarinSA.Locator.Data
                 client = new HttpClient();
                 client.BaseAddress = new Uri(HOST_NAME);
                 //request json for smaller payloads
-                client.DefaultRequestHeaders.Add("Accept", "application/json");
+				client.DefaultRequestHeaders.Add("Accept", "application/json");
 
                 //set time out to just 15 seconds
                 client.Timeout = new TimeSpan(0, 0, 15);

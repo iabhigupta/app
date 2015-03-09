@@ -59,6 +59,8 @@ namespace XamarinSA.Locator.Data.Models
 		{
 			Cooridinates = GpsCooridinate.Parse(xsa.GpsCoordinates);
 			Country = xsa.Country;
+			City = xsa.City;
+			StateRegion = xsa.StateRegion;
 			//TODO: fill in rest for city and state/region
 		}
 

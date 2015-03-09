@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.iOS", "XamarinSA.Locator\XamarinSA.Locator.iOS\XamarinSA.Locator.iOS.csproj", "{4018999A-6C2D-47AE-84F9-E904067E3CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.iOS", "Mobile\XamarinSA.Locator.iOS\XamarinSA.Locator.iOS.csproj", "{4018999A-6C2D-47AE-84F9-E904067E3CEB}"
 	ProjectSection(ProjectDependencies) = postProject
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24} = {67F9D3A8-F71E-4428-913F-C37AE82CDB24}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.Droid", "XamarinSA.Locator\XamarinSA.Locator.Droid\XamarinSA.Locator.Droid.csproj", "{F752A834-057D-4498-9444-AD292E7B687C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.Droid", "Mobile\XamarinSA.Locator.Droid\XamarinSA.Locator.Droid.csproj", "{F752A834-057D-4498-9444-AD292E7B687C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.WinPhone", "XamarinSA.Locator\XamarinSA.Locator.WinPhone\XamarinSA.Locator.WinPhone.csproj", "{5E605EF2-284E-44F8-A72A-C85C57FB15B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.WinPhone", "Mobile\XamarinSA.Locator.WinPhone\XamarinSA.Locator.WinPhone.csproj", "{5E605EF2-284E-44F8-A72A-C85C57FB15B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator", "XamarinSA.Locator\XamarinSA.Locator\XamarinSA.Locator\XamarinSA.Locator.csproj", "{A94862B4-F824-483E-B2B7-551E7EC51978}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator", "Mobile\XamarinSA.Locator\XamarinSA.Locator\XamarinSA.Locator.csproj", "{A94862B4-F824-483E-B2B7-551E7EC51978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.Data", "XamarinSA.Locator\XamarinSA.Locator.Data\XamarinSA.Locator.Data.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinSA.Locator.Data", "Mobile\XamarinSA.Locator.Data\XamarinSA.Locator.Data.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
